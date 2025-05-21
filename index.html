@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahmad Qasimi - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f8ecd4, #ffffff);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+    }
+
+    .navbar a {
+      font-size: 24px;
+      color: #55555560;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar a.active {
+      color: #8b4513;
+    }
+
+    .navbar a:hover {
+      color: #8b4513;
+      transform: scale(1.2);
+    }
+
+    .profile {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .profile img {
+      width: 300px;
+      border-radius: 30px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease;
+    }
+
+    .profile img:hover {
+      transform: scale(1.03);
+    }
+
+    .profile h1 {
+      margin-top: 20px;
+      font-size: 28px;
+      animation: fadeIn 2s ease;
+    }
+
+    .profile p {
+      font-size: 20px;
+    }
+
+    .socials {
+      margin-top: 20px;
+    }
+
+    .socials a {
+      margin: 0 12px;
+      font-size: 24px;
+      color: #333;
+      transition: transform 0.3s ease;
+    }
+
+    .socials a:hover {
+      color: #8b4513;
+      transform: scale(1.3);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a herf="index.html" class="active"><i class="fas fa-home"></i></a>
+    <a href="projects.html"><i class="fas fa-briefcase"></i></a>
+  </div>
+
+  <section class="profile" data-aos="zoom-in">
+    <img src="pfp.jpg" alt="Ahmad Qasimi" />
+    <h1>Hey! I'm <span style="color: #8b4513; font-weight: bold;">Ahmad Qasimi</span>, a creator.</h1>
+    <div class="socials" data-aos="fade-up">
+      <a href="https://facebook.com/ahmadjan.qasimi.71" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/ahm09._" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com/ahm09.__" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/992 901503522" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahmad Qasimi - Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fff8f0, #fffaf4);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+    }
+
+    .navbar a {
+      font-size: 24px;
+      color: #55555560;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar a.active {
+      color: #8b4513;
+    }
+
+    .navbar a:hover {
+      color: #8b4513;
+      transform: scale(1.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .project {
+      background: #fff5e1;
+      border-radius: 16px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 30px auto;
+      width: 85%;
+      max-width: 600px;
+      transition: transform 0.3s ease, color 0,3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .project a {
+      color: #8b4513;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html"><i class="fas fa-home"></i></a>
+    <a herf="projects.html" class="active"><i class="fas fa-briefcase"></i></a>
+  </div>
+
+  <h2 data-aos="zoom-in">My Projects</h2>
+
+  <div class="project" data-aos="fade-up" data-aos-delay="100">
+    <h3>Calculator</h3>
+    <p>A responsive calculator that handles basic math operations. Simple, fast and functional.</p>
+    <a href="https://ahmad-0-qasimi.github.io/Calculator/" target="_blank">View on GitHub</a>
+  </div>
+
+  <div class="project" data-aos="fade-up" data-aos-delay="200">
+    <h3>Login Page</h3>
+    <p>A modern login page designed with a smooth layout. A small project, but a big step in learning how real interfaces work.</p>
+    <a href="https://ahmad-0-qasimi.github.io/Login-page/" target="_blank">View on GitHub</a>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
